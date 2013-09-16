@@ -1,0 +1,44 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="ZK Listbox Example" apply="com.wirasoft.app.zkarchetypesample.controller.ListboxExampleController"
+		border="normal">
+	<hbox>
+		<listbox id="listboxData" width="350px">
+			<listhead>
+				<listheader label="Num" sort="auto" width="40px"/>
+				<listheader label="Vorname" />
+				<listheader label="Familienname" />			
+				<listheader label="Money" width="70px"/>
+				<listheader label=""/>
+			</listhead>
+		</listbox>	
+		<grid width="300px">
+			<columns>
+				<column></column>
+				<column></column>
+			</columns>
+			<rows>
+				<row>
+					<label value="ID"/>
+					<textbox id="txtId"/>
+				</row>
+				<row>
+					<label>Vorname</label>
+					<textbox id="txtFirstName"/>
+				</row>
+				<row>
+					<label>Familienname</label>
+					<textbox id="txtLastName"/>
+				</row>
+				<row>
+					<label>Money</label>
+					<textbox id="txtMoney"/>
+				</row>					
+				<row>
+					<button id="btnSimpan" label="Save"/>
+				</row>											
+			</rows>
+		</grid>
+	</hbox>
+</window>
+</zk>
