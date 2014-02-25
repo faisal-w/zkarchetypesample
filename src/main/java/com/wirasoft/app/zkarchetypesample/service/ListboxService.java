@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+//import com.wirasoft.app.zkarchetypesample.dao.PersonDAO;
 import com.wirasoft.app.zkarchetypesample.dao.PersonDAO;
 import com.wirasoft.app.zkarchetypesample.domain.Person;
 
@@ -21,6 +22,7 @@ public class ListboxService {
 		List<Person> tempList = new ArrayList<Person>();
 		
 		tempList = personDao.findAll();
+		System.out.println("Getting in Service, calling data...");
 		
 		/*
 		Person arneis = new Person(1,"Arneis", "Fleur", 1500L);

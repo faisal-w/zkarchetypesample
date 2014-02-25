@@ -121,7 +121,13 @@
 			<artifactId>spring-jdbc</artifactId>
 			<version>3.2.4.RELEASE</version>
 		</dependency>
-		            
+		
+		<!-- Jackson JSON Mapper -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.10</version>
+		</dependency>		            
 	     
 	     <!-- MySQL database driver -->
 		<dependency>
